@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Default port for Jupyter notebooks
 EXPOSE 8888
 
-ENTRYPOINT [ "jupyter", "notebook", "--ip='0.0.0.0'", "--allow-root" ]
+ENTRYPOINT [ "jupyter", "notebook", "--ip='0.0.0.0'", "--gpus=all", "--allow-root" ]
