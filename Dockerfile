@@ -8,3 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8888
 
 ENTRYPOINT [ "jupyter", "notebook", "--ip='0.0.0.0'", "--gpus=all", "--allow-root" ]
+
+# docker build -t nb .
+# docker run -it -p 8888:8888 nb
